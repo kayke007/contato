@@ -1,0 +1,70 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{margin: 0;padding: 0;}
+.fileon{
+	background: #069;
+	font-weight: bold;
+	color: #fff;
+	
+}
+
+.file{
+	position: absolute;
+	margin: 0 ;
+	font-size: 13px;
+	opacity: 0;
+	
+
+}
+
+.btn{
+	width: 100px;
+	border: 1px outset #999;
+	padding: 5px;
+	font: bold small-caps 14px Gotham, Helvetica Neue, Helvetica, Arial," sans-serif";
+	cursor: pointer;
+}
+.btn:hover{
+	border: 1px inset #666;
+	background: #999;
+}
+
+input{
+	padding: 8px;
+	background: #ccc;
+	border: 1px solid #999;
+	color: #333;
+	width: 470px;
+}
+
+span{
+	display: block;
+	font: bold 12px Gotham, Helvetica Neue, Helvetica, Arial," sans-serif";
+	margin-bottom: 5px;
+}
+
+label{
+	padding: 5px;
+	background: #666;
+	display: block;
+	margin-bottom: 10px;
+}
+
+legend{
+	font: bold small-caps 16px Baskerville, Palatino Linotype, Palatino, Century Schoolbook L, Times New Roman, serif;
+}
+
+fieldset{
+	border: 0;
+	padding: 15px 0;
+}
+
+form{
+	width: 500px;
+	padding: 10px;
+	background: #333;
+	font:14px Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana," sans-serif";
+	color: #FFFFFF;
+	margin: 10px;
+}

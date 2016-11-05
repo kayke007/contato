@@ -1,0 +1,93 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="estilo.css" />
+<title>Contato</title>
+</head>
+
+<body>
+	<form name="contato" action="" method="post" enctype="">
+		<fieldset>
+			<legend>Envie seu contato:</legend>
+			<label>
+				<span>Nome:</span>
+				<input type="text" name="nome" value="Informe seu nome!" 
+				onclick="
+					this.style.background='#F5F5F5',
+					this.style.borderColor='#fff'
+					if(this.value == 'Informe seu nome!' | this.value=='Nome é inválido!'){
+						this.value ='';
+					}
+					
+				"
+				onblur="
+					if(this.value ==''){
+					this.value ='Informe seu nome!',
+					this.style.backgroundColor = '#FFA6A6',
+					this.style.borderColor='red';
+					
+					}
+				
+				"
+				onchange="
+					if(this.value.length <=10){
+					this.value ='Nome é inválido!',
+					this.style.backgroundColor = '#FFA6A6',
+					this.style.borderColor='red';
+					
+					}else{
+					this.style.backgroundColor = '#97FFB1',
+					this.style.borderColor='green';
+					}
+				"
+				/>
+			</label>
+			<label>
+				<span>Telefone:</span>
+				<input type="tel" name="telefone" value="Informe seu numero!" maxlength="11"
+				onclick="
+					this.style.background='#F5F5F5',
+					this.style.borderColor='#fff'
+					if(this.value == 'Informe seu numero!' | this.value=='Formato inválido:(xx) xxxxx-xxxx'){
+						this.value ='';
+					}
+					
+				"
+				onblur="
+					if(this.value ==''){
+					this.value ='Informe seu numero!',
+					this.style.backgroundColor = '#FFA6A6',
+					this.style.borderColor='red';
+					
+					}
+				"
+				onchange="
+					if(this.value.length <11){
+					this.value ='Formato inválido:(xx) xxxxx-xxxx',
+					this.style.backgroundColor = '#FFA6A6',
+					this.style.borderColor='red';
+					
+					}else{
+					this.style.backgroundColor = '#97FFB1',
+					this.style.borderColor='green';
+					}
+				"
+				/>
+			</label>
+			<label>
+				<span>Class:</span>
+				<input type="text" name="class"/>
+			</label>
+			<label>
+				<span>Imagem:</span>
+				<input type="file" name="img" class="file" size="22" onChange="document.getElementById('fileon').value = this.value;" />
+				<input type="text" name="fileon" class="fileon" id="fileon" />
+			</label>
+			<input type="reset" name="limpar" value="Limpar" class="btn" />
+			<input type="submit" name="enviar" value="Enviar" class="btn" />
+			
+			</fieldset>
+	</form>
+</body>
+</html>
